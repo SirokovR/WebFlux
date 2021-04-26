@@ -1,0 +1,13 @@
+version: '3'
+ 
+services:
+  db:
+    image: "postgres:12.6"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: flux
+      POSTGRES_USER: fuji
+      POSTGRES_PASSWORD: fuji
+    volumes:
+      - /home/laisk/flux_my_postgres/data:/var/lib/postgresql/data
