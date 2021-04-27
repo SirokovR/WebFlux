@@ -18,7 +18,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
 
     // https://mvnrepository.com/artifact/org.springframework.security/spring-security-core
-    implementation group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.5'
+    implementation group: 'org.springframework.security', name: 'spring-security-core', version: '5.4.6'
+
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-config
+    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '5.4.6'
+
 
     implementation 'org.flywaydb:flyway-core'
     compile 'org.springframework:spring-jdbc'
