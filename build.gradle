@@ -23,6 +23,10 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.security/spring-security-config
     implementation group: 'org.springframework.security', name: 'spring-security-config', version: '5.4.6'
 
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-web
+    implementation group: 'org.springframework.security', name: 'spring-security-web', version: '5.4.6'
+
+
 
     implementation 'org.flywaydb:flyway-core'
     compile 'org.springframework:spring-jdbc'
