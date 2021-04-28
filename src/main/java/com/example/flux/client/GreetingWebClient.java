@@ -11,8 +11,12 @@ public class GreetingWebClient {
 
   private Mono<ClientResponse> result = client.get()
       .uri("/hello")
-      .accept(MediaType.TEXT_PLAIN)
-      .exchange();
+/*      .accept(MediaType.TEXT_PLAIN)
+      .exchange();*/
+
+          .accept(MediaType.TEXT_PLAIN)
+          .retrieve()
+          .bodyToMono(ClientResponse.class);
 
   public String getResult() {
     return ">> result = " + result.flatMap(res -> res.bodyToMono(String.class)).block();
